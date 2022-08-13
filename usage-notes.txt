@@ -1,0 +1,16 @@
+////// Deployment //////
+
+- verify that stylesheet link on both html pages is assets/css/style.min.css
+
+- terminal:
+npm run postcss-build
+
+
+////// Development //////
+
+- change stylesheet links to style/unpacked.css
+
+- terminal:
+npm run postcss-dev
+
+- edit unprocessed using postcss syntax; see package.json for plugins

@@ -1,0 +1,28 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "Fully responsive portfolio site made with PostCSS",
+  "main": "index.js",
+  "scripts": {
+    "postcss-dev": "postcss style/unprocessed.css -u postcss-short rucksack-css precss postcss-if-media autoprefixer -o style/unpacked.css -w",
+    "postcss-build": "postcss style/unprocessed.css -u postcss-short rucksack-css precss postcss-if-media autoprefixer -o style/unpacked.css && mqpacker style/unpacked.css > style/style.css && css-minify -f style/style.css -o assets/css"
+  },
+  "keywords": [
+    "postcss",
+    "portfolio",
+    "responsive"
+  ],
+  "author": "Zechariah Bryan",
+  "license": "ISC",
+  "devDependencies": {
+    "@hail2u/css-mqpacker": "github:hail2u/node-css-mqpacker#v9.0.0",
+    "css-minify": "^2.0.0",
+    "postcss": "^8.3.6",
+    "postcss-cli": "^8.3.1",
+    "postcss-if-media": "^1.0.3",
+    "postcss-short": "^5.0.0",
+    "precss": "^4.0.0",
+    "rucksack-css": "^1.0.2"
+  },
+  "dependencies": {}
+}

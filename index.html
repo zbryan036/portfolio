@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1.0">
+    <title>Zech Bryan</title>
+    <link rel="stylesheet" href="assets/css/all.min.css">
+    <link rel="stylesheet" href="style/unpacked.css">
+    <!-- <link rel="stylesheet" href="assets/css/style.min.css"> -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/index.js"></script>
+</head>
+<!-- !!!!!!!!!!!!!!!!!!!!!!!!! -->
+<!-- !!!!!!!!!!!!!!!!!!!!!!!!! -->
+<!--//// FIRST IMPRESSIONS ////-->
+<!-- !!!!!!!!!!!!!!!!!!!!!!!!! -->
+<!-- !!!!!!!!!!!!!!!!!!!!!!!!! -->
+<!-- Very clean single-page UI, aside from the following issues: -->
+<!--: get it on github -->
+<!--: responsiveness: crunky waves -->
+<!-- looks pretty good at most sizes, but there's a persistent issue with the distances between waves -->
+<!-- being inconsistent; many cases where the hard line shows -->
+<!--? edit the svg tags: cost-benefit on this doesn't look great -->
+<!--? add colored boxes under the first and second waves: how to attach them? -->
+<!--: responsiveness: section height -->
+<!-- another inconsistency occurs with the white space between sections. The projects section gets -->
+<!-- fucked at 1080p, which is probably how most employers will be viewing this -->
+<!--: color scheme -->
+<!-- kinda boring. again, not a dealbreaker, but maybe we could improve it -->
+<!--: message icon -->
+<!-- looks a little goofy when it's on the light gray sections -->
+<!--: weirdness at the bottom -->
+<!-- little strip of dark gray shows. Not good -->
+<!--: incomplete -->
+<!-- finish the section describing the site. It won't take long, and it'll feel like easy progress -->
+<body>
+    <!--//// NAVIGATION /////-->
+    <!-- nav menu  -->
+    <nav id="nav">
+        <a id="home-link">Home</a>
+        <a id="projects-link">Featured Work</a>
+        <a id="about-link">About Me</a>
+        <a id="details-link">Insite This Site</a>
+    </nav>
+
+    <!-- nav burger -->
+    <div id="burger-bar">
+        <div id="nav-burger">
+            <div class="line top"></div>
+            <div class="line"></div>
+            <div class="line bottom"></div>
+        </div>
+        <div id="toggle-sound">
+            <i class="fas fa-volume-mute button"></i>
+        </div>
+        <div id="show-contact">
+            <i class="fas fa-comments"></i>
+            Get in Touch
+        </div>
+        <div id="contact">
+            <a id="hide-contact"><i class="fas fa-times-circle"></i></a>
+            <a href="mailto:zbryan036@gmail.com"><i class="fas fa-envelope"></i></a>
+            <a id="show-phone-number"><i class="fas fa-phone"></i></a>
+            <a href="https://github.com/zbryan036" target="blank"><i class="fab fa-github"></i></a>
+            <a href="https://linkedin.com/in/zechariah-bryan-7a3885197" target="blank"><i class="fab fa-linkedin"></i></a>
+        </div>
+    </div>
+
+    <!--//// HOME /////-->
+    <section id="home">
+        <div id="phone-number">
+            <svg height="20" width="16">
+                <polygon points="0,20 9,0 16,20" style="fill:#62738d"></polygon>
+            </svg>
+            <p>(509) 730-4334</p>
+            copied to clipboard!
+        </div>
+        <div id="title">
+            <h1>Zech Bryan</h1>
+            <p>web developer</p>
+        </div>
+    </section>
+    
+    <!--//// PROJECTS /////-->
+    <section id="projects">
+        <svg class="first wave" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#cddaed" fill-opacity="0.33" d="M0,256L48,250.7C96,245,192,235,288,202.7C384,171,480,117,576,122.7C672,128,768,192,864,202.7C960,213,1056,171,1152,144C1248,117,1344,107,1392,101.3L1440,96L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
+        <svg class="second wave" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#cddaed" fill-opacity="0.67" d="M0,96L48,122.7C96,149,192,203,288,213.3C384,224,480,192,576,176C672,160,768,160,864,186.7C960,213,1056,267,1152,277.3C1248,288,1344,256,1392,240L1440,224L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
+        <svg class="third wave" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#cddaed" fill-opacity="1" d="M0,160L48,170.7C96,181,192,203,288,186.7C384,171,480,117,576,128C672,139,768,213,864,208C960,203,1056,117,1152,106.7C1248,96,1344,160,1392,192L1440,224L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
+        <div class="section-content">
+            <div class="section-title">
+                <h1>Featured Work</h1>
+                <div class="underline wide"></div>
+                <div class="underline"></div>
+            </div>
+            <div class="project">
+                <div class="image-box">
+                    <img src="assets/images/landscape.jpg" alt="pic">
+                    <div class="link">
+                        <a href="">Project 1</a>
+                    </div>
+                </div>
+                <div class="description">
+                    <h5>Project 1</h5>
+                    <div class="underline"></div>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deserunt iusto quae libero! Harum optio vero praesentium. Consectetur placeat voluptatem harum?</p>
+                </div>
+            </div>
+            <div class="project right">
+                <div class="image-box">
+                    <img src="assets/images/landscape.jpg" alt="pic">
+                    <div class="link">
+                        <a href="">Project 2</a>
+                    </div>
+                </div>
+                <div class="description">
+                    <h5>Project 2</h5>
+                    <div class="underline"></div>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deserunt iusto quae libero! Harum optio vero praesentium. Consectetur placeat voluptatem harum?</p>
+                </div>
+            </div>
+            <div class="project">
+                <div class="image-box">
+                    <img src="assets/images/landscape.jpg" alt="pic">
+                    <div class="link">
+                        <a href="">Project 3</a>
+                    </div>
+                </div>
+                <div class="description">
+                    <h5>Project 3</h5>
+                    <div class="underline"></div>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deserunt iusto quae libero! Harum optio vero praesentium. Consectetur placeat voluptatem harum?</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--//// ABOUT /////-->
+    <section id="about">
+        <svg class="first wave" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#1c1d1f" fill-opacity="0.33" d="M0,96L48,128C96,160,192,224,288,229.3C384,235,480,181,576,170.7C672,160,768,192,864,197.3C960,203,1056,181,1152,149.3C1248,117,1344,75,1392,53.3L1440,32L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
+        <svg class="second wave" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#1c1d1f" fill-opacity="0.67" d="M0,224L48,208C96,192,192,160,288,170.7C384,181,480,235,576,245.3C672,256,768,224,864,186.7C960,149,1056,107,1152,101.3C1248,96,1344,128,1392,144L1440,160L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
+        <svg class="third wave" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#1c1d1f" fill-opacity="1" d="M0,128L48,149.3C96,171,192,213,288,208C384,203,480,149,576,122.7C672,96,768,96,864,128C960,160,1056,224,1152,224C1248,224,1344,160,1392,128L1440,96L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
+        <div class="section-content">
+            <div class="image-box">
+                <img src="assets/images/landscape.jpg" alt="">
+            </div>
+            <div class="underline wide"></div>
+            <div class="underline"></div>
+            <div class="about-text">
+                <p>I'm a primarily self-taught software developer with a love of learning and a penchant for problem solving. I graduated from
+                Coding Dojo, where I picked up the basics of the MEAN, C#/Asp.net core, and python/django/SQL stacks. Shortly afterward, I
+                joined the Washington Army National Guard as an IT specialist, where I learned the fundamentals of networking, gained valuable
+                experience solving problems with high stakes, and drastically improved my ability to mop floors and do pushups. I still serve
+                in the guard, and I am also working as a PC technician for the Army Corps of Engineers. My passion for overcoming new challenges also
+                extends to my private life, and I spend much of my free time lifting, backpacking, and playing classical piano (that's me in the
+                background, with Debussy's <span class="italics">Arabesque no. 1</span>).</p>
+            </div>
+        </div>
+    </section>
+    
+    <!--//// DETAILS /////-->
+    <section id="details">
+        <svg class="first wave" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#cddaed" fill-opacity="0.33" d="M0,64L48,64C96,64,192,64,288,96C384,128,480,192,576,186.7C672,181,768,107,864,112C960,117,1056,203,1152,213.3C1248,224,1344,160,1392,128L1440,96L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
+        <svg class="second wave" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#cddaed" fill-opacity="0.67" d="M0,192L48,165.3C96,139,192,85,288,96C384,107,480,181,576,208C672,235,768,213,864,176C960,139,1056,85,1152,85.3C1248,85,1344,139,1392,165.3L1440,192L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
+        <svg class="third wave" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#cddaed" fill-opacity="1" d="M0,128L48,149.3C96,171,192,213,288,229.3C384,245,480,235,576,197.3C672,160,768,96,864,90.7C960,85,1056,139,1152,154.7C1248,171,1344,149,1392,138.7L1440,128L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
+        <div class="section-content">
+            <div class="section-title">
+                <h1>Inside this Site</h1>
+                <div class="underline wide"></div>
+                <div class="underline"></div>
+            </div>
+            <div class="details-text">
+                <p></p>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
